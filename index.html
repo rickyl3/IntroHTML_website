@@ -12,28 +12,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricky L. - Intro Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-
+        header {
+            width: 1;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            background-color: red;
+            background-image: url("Images/Navigation.jpg");
+            overflow: auto;
+        }
+        .navigation li {
+            height: 5%;
+            font-size: 1.5vw;
+            font-family: "Montserrat", serif;
+            color: black;
+            font-weight: bold;
+            float: left;
+            margin: 10px 9.5%;
+        }
+        .navigation li a {
+            text-decoration: none;
+        }
+        .navigation li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <ul class="navigation">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="/skills.html">Skills</a></li>
+            <li><a href="spots.html">Spots</a></li>
+        </ul>
+    </header>
     <h1>Intro Website</h1>
-    <p>Ricky L.</p>
-
-    <p>test remo</p>
+        <p>Ricky L.</p>
 
     <h2>About Me</h2>
     <p>My name is Ricky Leung and I am currently a software major at 
         Brooklyn Technical High School. I am making this website for an assignment
-        in Irimina's Web Development class (Period 7/8).
+        in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled 
+        because I'm too lazy.
     </p>
-    <h3>Other pages:</h3>
-    <ul>
-        <li>Main Page <-- You are here</li>
-        <li><a href="favorites.html">Favorites</a></li>
-        <li><a href="/skills.html">Skills</a></li>
-        <li><a href="spots.html">Spots</a></li>
-    </ul>
+
     <div class="requirements">
         <p>
             Here is the list of requirements for each page of the website(unless specified) 

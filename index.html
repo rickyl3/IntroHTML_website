@@ -39,49 +39,84 @@
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
         }
+
+        h1, .author {
+            display: flex;
+            justify-content: center;
+        }
+
+        video {
+            width: 50vw;
+        }
+        .about {
+            display: flex;
+            flex-direction: row;
+        }
+        .aboutInfo h2, .aboutInfo p {
+            text-align: center;
+        }
+        .aboutInfo h2 {
+            font-size: 3vw;
+        }
+        .aboutInfo p {
+            font-size: 2vw;
+            padding: 2vw;
+        }
     </style>
 </head>
 <body>
     <header>
-        <ul class="navigation">
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
-            <li><a href="/skills.html">Skills</a></li>
-            <li><a href="spots.html">Spots</a></li>
-        </ul>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="spots.html">Spots</a></li>
+            </ul>
+        </nav>
+        <h1>Intro Website</h1>
+        <p class="author">Ricky L.</p>
     </header>
-    <h1>Intro Website</h1>
-        <p>Ricky L.</p>
 
-        <p>test</p>
+    <main>
+        <div class="about">
+            <video controls src="Video/Sunset.mp4"></video>
+            <div class="aboutInfo">
+                <h2>About Me</h2>
+                <p>My name is Ricky Leung and I am currently a software major at 
+                    <a href="https://www.bths.edu/" target="_blank">Brooklyn Technical High School</a>. I am making this website for an assignment
+                    in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled 
+                    because I'm too lazy.
+                </p>
+                <img src="Images/btech.jfif">
+                <audio controls src="Audio/crickets_insects.wav"></audio>
+            </div>
+        </div>
 
-    <h2>About Me</h2>
-    <p>My name is Ricky Leung and I am currently a software major at 
-        Brooklyn Technical High School. I am making this website for an assignment
-        in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled 
-        because I'm too lazy.
-    </p>
+        <div class="requirements">
+            <p>
+                Here is the list of requirements for each page of the website(unless specified) 
+                because I don't feel like constantly going back to the google docs:
+            </p>
+            <ul>
+                <li>One HTML comment</li>
+                <li>At least two headings (h1, h2)</li>
+                <li>At least two images(you do not need to be in the image)</li>
+                <li>At least two paragraphs</li>
+                <li>At least one relative and one absolute link</li>
+                <li>Copyright symbol</li>
+                <li>At least one list</li>
+                <li>At least one table(on one page is enough)</li>
+                <li>At least one audio file(on one page is enough) with controls for the viewer</li>
+                <li>At least one video file(on one page is enough) with controls for the viewer</li>
+                <li>At least one form(on one page is enough)</li>
+                <li>At least one generic container element(div or span) and one semantic container element</li>
+            </ul>
+        </div>
+    </main>
 
-    <div class="requirements">
-        <p>
-            Here is the list of requirements for each page of the website(unless specified) 
-            because I don't feel like constantly going back to the google docs:
-        </p>
-        <ul>
-            <li>One HTML comment</li>
-            <li>At least two headings (h1, h2)</li>
-            <li>At least two images(you do not need to be in the image)</li>
-            <li>At least two paragraphs</li>
-            <li>At least one relative and one absolute link</li>
-            <li>Copyright symbol</li>
-            <li>At least one list</li>
-            <li>At least one table(on one page is enough)</li>
-            <li>At least one audio file(on one page is enough) with controls for the viewer</li>
-            <li>At least one video file(on one page is enough) with controls for the viewer</li>
-            <li>At least one form(on one page is enough)</li>
-            <li>At least one generic container element(div or span) and one semantic container element</li>
-        </ul>
-    </div>
-
+    <footer>
+        <p>&copy; </p>
+    </footer>
 </body>
 </html>

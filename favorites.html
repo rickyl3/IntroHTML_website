@@ -14,21 +14,58 @@
     <title>Ricky L. - Favorites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+            background-color: red;
+            background-image: url("Images/Navigation.jpg");
+            overflow: auto;
+        }
+        .navigation li {
+            height: 5%;
+            font-size: 1.5vw;
+            font-family: "Montserrat", serif;
+            color: black;
+            font-weight: bold;
+            float: left;
+            margin: 10px 9.5%;
+        }
+        .navigation li a {
+            text-decoration: none;
+        }
+        .navigation li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
 
+        h1, .author {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Hobbies and Interests</h1>
-    <p>Ricky L.</p>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="spots.html">Spots</a></li>
+            </ul>
+        </nav>
+        <h1>Hobbies and Interests</h1>
+        <p class="author">Ricky L.</p>
+    </header>
 
-    <p>test</p>
+    <main>
 
-    <h3>Other pages:</h3>
-    <ul>
-        <li><a href="index.html">Main Page</a></li>
-        <li><a>Favorites <-- You are here</li>
-        <li><a href="/skills.html">Skills</a></li>
-        <li><a href="spots.html">Spots</a></li>
-    </ul>
+    </main>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
 </body>
 </html>

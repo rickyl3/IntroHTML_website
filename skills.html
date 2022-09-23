@@ -12,8 +12,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricky L. - Skills</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: rgb(205, 230, 254);
+        }
+
         .navigation {
             list-style-type: none;
             margin: 0;
@@ -41,8 +45,40 @@
         }
 
         h1, .author {
+            font-family: "Montserrat", serif;
             display: flex;
             justify-content: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        img {
+            width: 20%;
+            margin: 0px auto;
+        }
+        .skill {
+            display: table;
+            margin: 0px auto;
+            text-align: left;
+        }
+        .skill li {
+            padding: 2px 0px;
+        }
+        hr.solid {
+            width: 70%;
+            border-top: 3px solid #bbb;
+        }
+
+        footer {
+            padding-top: 100px;
+            text-align: center;
+        }
+        .validation {
+            width: 30%;
         }
     </style>
 </head>
@@ -52,7 +88,7 @@
             <ul class="navigation">
                 <li><a href="index.html">Main Page</a></li>
                 <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="spots.html">Spots</a></li>
             </ul>
         </nav>
@@ -61,11 +97,24 @@
     </header>
 
     <main>
-
+        <img src="Images/pencilpaper.jpg" alt="Pencil and paper">
+        <div>
+            <h2>Learn a different language</h2>
+            <p>I can kind of teach the basics of Japanese?</p>
+            <ul class="skill">
+                <li>Hiragana</li>
+                <li>Katakana</li>
+            </ul>
+        </div>
+        <hr class="solid">
+        <h2>Drawing of groot because why not</h2>
+        <p><a href="https://blog.displate.com/easy-things-to-draw/" target="_blank">(Not my drawing)</a></p>
+        <img src="Images/groot.jpg" alt="groot">
     </main>
 
     <footer>
-        <p>&copy; </p>
+        <p>Copyright &copy; Ricky L</p>
+        <img src="Validations/skillsValidation.PNG" alt="Markup validation" class="validation">
     </footer>
 </body>
 </html>

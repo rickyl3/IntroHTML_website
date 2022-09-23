@@ -12,8 +12,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricky L. - Spots</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: rgb(205, 230, 254);
+        }
+
         .navigation {
             list-style-type: none;
             margin: 0;
@@ -41,10 +45,53 @@
         }
 
         h1, .author {
+            font-family: "Montserrat", serif;
             display: flex;
             justify-content: center;
         }
         
+        main {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        img {
+            width: 20%;
+            margin: 0px auto;
+        }
+        table {
+            border: 1px solid black;
+            width: 50%;
+            margin: 0px auto;
+        }
+        th, td {
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+        hr.solid {
+            width: 70%;
+            border-top: 3px solid #bbb;
+        }
+        #atlantic {
+            padding-top: 50px;
+        }
+        .notGreat {
+            display: table;
+            margin: 0px auto;
+            text-align: left;
+        }
+        .notGreat li {
+            padding: 2px 0px;
+        }
+
+        footer {
+            padding-top: 100px;
+            text-align: center;
+        }
+        .validation {
+            width: 30%;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +100,7 @@
             <ul class="navigation">
                 <li><a href="index.html">Main Page</a></li>
                 <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="spots.html">Spots</a></li>
             </ul>
         </nav>
@@ -62,11 +109,58 @@
     </header>
 
     <main>
+        <img src="Images/central.jpg" alt="Central Park">
+        <h2>Great spots</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Borough</th>
+                <th>Site</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Central Park</td>
+                <td>Manhattan</td>
+                <td><a href="https://www.centralparknyc.org/" target="_blank">centralparknyc.org</a></td>
+                <td>59th to 110th Streets</td>
+            </tr>
+            <tr>
+                <td>Empire State Building</td>
+                <td>Manhattan</td>
+                <td><a href="https://www.esbnyc.com/" target="_blank">esbnyc.com</a></td>
+                <td>350 Fifth Ave</td>
+            </tr>
+            <tr>
+                <td>Club A Steakhouse</td>
+                <td>Manhattan</td>
+                <td><a href="http://www.clubasteakhouse.com/" target="_blank">clubasteakhouse.com</a></td>
+                <td>240 E 58th St, New York, NY 10022</td>
+            </tr>
+            <tr>
+                <td>Joe's Pizza</td>
+                <td>Varies - check site</td>
+                <td><a href="https://www.joespizzanyc.com/" target="_blank">joespizzanyc.com</a></td>
+                <td>Varies - check site</td>
+            </tr>
+        </table>
 
+        <hr class="solid">
+
+        <div>
+            <img src="Images/atlantic.jpg" alt="Atlantic Av-Barclays Center station" id="atlantic">
+            <h2>Not so great things</h2>
+            <ul class="notGreat">
+                <li>Crowded/Delayed trains</li>
+                <li>Expensive rent</li>
+                <li>Not the most sanitary</li>
+                <li>Noisy</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; </p>
+        <p>Copyright &copy; Ricky L</p>
+        <img src="Validations/spotsValidation.PNG" alt="Markup validation" class="validation">
     </footer>
 </body>
 </html>

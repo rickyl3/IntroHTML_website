@@ -12,8 +12,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricky L. - Favorites</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: rgb(205, 230, 254);
+        }
+
         .navigation {
             list-style-type: none;
             margin: 0;
@@ -41,8 +45,35 @@
         }
 
         h1, .author {
+            font-family: "Montserrat", serif;
             display: flex;
             justify-content: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        
+        img {
+            width: 20%;
+            display: block;
+            margin: 0px auto;
+            padding-bottom: 50px;
+        }
+        .list {
+            display: table;
+            margin: 0px auto;
+            text-align: left;
+        }
+        .list li {
+            padding: 2px 0px;
+        }
+
+        footer {
+            padding-top: 100px;
+            text-align: center;
+        }
+        .validation {
+            width: 30%;
         }
     </style>
 </head>
@@ -52,7 +83,7 @@
             <ul class="navigation">
                 <li><a href="index.html">Main Page</a></li>
                 <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="spots.html">Spots</a></li>
             </ul>
         </nav>
@@ -61,11 +92,22 @@
     </header>
 
     <main>
-
+        <div>
+            <img src="Images/pool.jpg" alt="8 ball pool">
+            <img src="Images/ProgrammingIllustration.png" alt="Programming cartoon">
+            <h2>Things I think I like</h2>
+            <ul class="list">
+                <li>Video games</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Programming</a></li>
+                <li>Pool(8 ball)</li>
+                <li>idek what i like tbh</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; </p>
+        <p>Copyright &copy; Ricky L</p>
+        <img src="Validations/favoritesValidation.PNG" alt="Markup validation" class="validation">
     </footer>
 </body>
 </html>

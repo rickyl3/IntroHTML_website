@@ -14,6 +14,10 @@
     <title>Ricky L. - Intro Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
+        body {
+            background-color: rgb(205, 230, 254);
+        }
+
         .navigation {
             list-style-type: none;
             margin: 0;
@@ -41,14 +45,19 @@
         }
 
         h1, .author {
+            font-family: "Montserrat", serif;
             display: flex;
             justify-content: center;
         }
 
         video {
-            width: 50vw;
+            width: 40vw;
+        }
+        img {
+            width: 20%;
         }
         .about {
+            font-family: "Montserrat", serif;
             display: flex;
             flex-direction: row;
         }
@@ -59,8 +68,16 @@
             font-size: 3vw;
         }
         .aboutInfo p {
-            font-size: 2vw;
+            font-size: 1.5vw;
             padding: 2vw;
+        }
+
+        footer {
+            padding-top: 28px;
+            text-align: center;
+        }
+        .validation {
+            width: 30%;
         }
     </style>
 </head>
@@ -85,10 +102,11 @@
                 <h2>About Me</h2>
                 <p>My name is Ricky Leung and I am currently a software major at 
                     <a href="https://www.bths.edu/" target="_blank">Brooklyn Technical High School</a>. I am making this website for an assignment
-                    in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled 
+                    in Irimina's Web Development class (Period 7/8). The rest of this website won't be styled that much 
                     because I'm too lazy.
                 </p>
-                <img src="Images/btech.jfif" alt="btech">
+                <img src="Images/btech.jfif" alt="Brooklyn Tech">
+                <img src="Images/ocean.jpg" alt="Ocean">
                 <audio controls src="Audio/crickets_insects.wav"></audio>
             </div>
         </div>
@@ -113,10 +131,19 @@
                 <li>At least one generic container element(div or span) and one semantic container element</li>
             </ul>
         </div>
+        <form action="index.html">
+            <label for="name">First name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="osis">Last name:</label>
+            <input type="text" id="osis" name="osis"><br><br>
+            <input type="submit" value="Submit">
+            <label>This form doesn't do anything</label>
+        </form>
     </main>
 
     <footer>
-        <p>&copy; </p>
+        <p>Copyright &copy; Ricky L</p>
+        <img src="Validations/indexValidation.PNG" alt="Markup validation" class="validation">
     </footer>
 </body>
 </html>
